@@ -2,11 +2,8 @@ name: Convert Excel to JS
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - 'data.xlsx'
-      - 'convert.js'
+    # Видалено обмеження по гілках та файлах — запускатиметься при КОЖНОМУ коміті
+    # Можна додати branches, якщо хочеш обмежити гілки
 
 jobs:
   convert:
