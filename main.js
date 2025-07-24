@@ -79,7 +79,10 @@ function renderPairs() {
   const valueOfIndexProf = Object.keys(professions)[indexesProf]
   const indexesModifiers = generateIndexes(Object.keys(modifiers));
   const valueOfindexesModifiers = Object.keys(modifiers)[indexesModifiers]
-  console.log()
+  console.log(indexesProf + " indexesProf")
+  console.log(valueOfIndexProf + " valueOfIndexProf")
+  console.log(indexesModifiers + " indexesModifiers")
+  console.log(valueOfindexesModifiers + " valueOfindexesModifiers")
     const row = document.createElement("div");
     row.className = "pair-row";
     selectedLanguages.forEach(lang => {
