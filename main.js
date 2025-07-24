@@ -78,8 +78,7 @@ function renderPairs() {
   const indexesProf = generateIndexes(Object.keys(professions));
   const valueOfIndexProf = Object.keys(professions)[indexesProf]
   const indexesModifiers = generateIndexes(Object.keys(modifiers));
-  const valueOfindexesModifiers = Object.keys(modifiers)[indexesProf]
-  //console.log(professions[professions[indexesProf]].ua)
+  const valueOfindexesModifiers = Object.keys(modifiers)[indexesModifiers]
   console.log()
     const row = document.createElement("div");
     row.className = "pair-row";
