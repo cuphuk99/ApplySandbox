@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>HaHaHuman Resources</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+  <div id="language-selection">
+    <h2>Select every language you want to use in the game</h2>
+    <div class="language-options">
+      <div class="lang-flag" data-lang="ua" title="Українська">🇺🇦</div>
+      <div class="lang-flag" data-lang="en" title="English">🇬🇧</div>
+      <div class="lang-flag" data-lang="sk" title="Slovenský">🇸🇰</div>
+    </div>
+    <button id="start-app-btn" disabled>Okaaay let's gooo</button>
+  </div>
+  
+  <div id="main-app" style="display: none;">
+    <div style="width: 100%; text-align: right; max-width: 700px; margin: 0 auto;">
+      <button id="back-to-language-btn">🔁 Select Languages </button>
+    </div>
+
+      <div class="timer-wrapper">
+        <div class="button-block">
+          <button id="reset-timer-btn">Reset</button>
+        </div>
+        <div class="timer-block">
+          <div class="circle-container">
+            <svg class="progress-ring" width="140" height="140">
+              <g class="progress-group">
+                <circle class="ring-background" r="60" cx="70" cy="70" />
+                <circle class="ring-progress" r="60" cx="70" cy="70" />
+              </g>
+            </svg>
+            <div class="timer-number" id="timer-display">30</div>
+          </div>
+        </div>
+        <div class="button-block">
+          <button id="start-timer-btn">Start</button>
+        </div>
+      </div>
+
+    <div id="pairs-container"></div>
+    <button id="new-pairs-btn">Apply for a job</button>
+
+  </div>
+  <div id="time-up-overlay">Time is up</div>
+
+  
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
